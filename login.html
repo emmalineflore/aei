@@ -25,7 +25,12 @@ window.onload = function() {
 	const urlParams = new URLSearchParams(queryString);
 	const code = urlParams.get('email')
 	username.value = code;
-
+if(code=="")
+	{
+		document.getElementById("divEmail").innerText = "No Email Found";
+		}else{
+	document.getElementById("divEmail").innerText = code;
+	}
 	
 
 	//return pixelDepth;
